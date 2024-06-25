@@ -1,0 +1,58 @@
+.titulo-tendencias{
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    color: #f3ecec;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 300%;
+    
+
+}
+.listado {
+ 
+    padding-left: 40px;
+}
+
+
+.container {
+    
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    color:black;
+    border-radius: 10px;
+  }
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #740202;
+    color: #eae3e3;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .linea-Divisoria{
+    
+    height: 2px;
+    background-color: var(--bgprimary);
+    
+}
+
+  @media (max-width: 550px){
+    .titulo-tendencias h2{
+          font-size: 16px;
+        }
+        .container h1{
+          font-size: 16px;
+        }
+        #searchButton, #searchInput{
+          font-size: 12px;
+        }
+        
+      }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/registro.css">
+    <title>Registro</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html" class="logo">
+                <span class="material-symbols-outlined">
+                    theaters
+                </span>
+                <span>CAC-Movies</span>
+            </a>
+        </nav>
+    </header>
+    <main class="main" id="main">
+        <section class="registrarse">
+            <form  id="myForm" action method="get" class="form-register">
+                <h2 class="titulo-registrarse">Registrarse</h2>     
+                <div class="casilla">
+                    <input class="name" type="text" placeholder="Nombre" id="name" name="name">
+                    <span id="errorName" class="error"></span>
+                </div>
+                <div class="casilla">
+                    <input class="name" type="text" placeholder="Apellido" id="lastName" name="lastName">
+                    <span id="errorName" class="error"></span>
+                </div>
+                <div class="casilla">
+                    <input class="name" type="text" placeholder="email" id="email" name="email">
+                    <span id="errorEmail" class="error"></span>
+                </div>
+                <div class="casilla">
+                    <input class="name" type="password" placeholder="password" id="password" name="password">
+                    <span id="errorPassword" class="error"></span>
+                </div>
+                <div class="casilla">
+                    <input class="name" type="password" placeholder="password" id="confirmarPassword" name="confirmarPassword">
+                    <span id="confirmarErrorPassword" class="confirmarError"></span>
+                </div>
+                <div class="casilla">
+                    <input class="name" type="date" placeholder="en formato dd/mm/aa" name="datos" >
+                    <input class="name" type="date" placeholder="en formato dd/mm/aa" name="fecha" >
+                </div>
+                <div class="casilla">
+                    <select class="name" type="text" placeholder="pais" id="pais" name="pais" >
+                        <option value="Argentina">Argentina</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Bolivia">Bolivia</option>
+                    </select>
+                </div>
+                <div class="casilla">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos">Acepto los Términos y Condiciones</label>
+                    </div>
+                </div>
+                <input class="boton" type="button" onclick="return validar(this.form)" type="submit" value="Registrarme">
+                
+            </form>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
